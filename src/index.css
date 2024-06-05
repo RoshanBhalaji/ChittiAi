@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Simple Typewriter Effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid white;
+  animation: typing 3s steps(30, end);
+  max-width: 100%;
+}
+
+.blink {
+  animation: blink 0.75s step-end ;
+  border-color: rgb(250, 249, 249) !important; /* Adjust specificity and add !important */
+}
+.typewriter1 {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #111827;
+  animation: typing 4s steps(30, end);
+  max-width: 100%;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color:#fefefe;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #153448;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
