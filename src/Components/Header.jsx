@@ -44,7 +44,7 @@ const Header = () => {
         <div className="flex items-center">
           <button onClick={handleButtonClick}>
             <img
-              src="/AII.jpg"
+              src={`${import.meta.env.BASE_URL}AII.jpg`}
               alt="Logo"
               width="70"
               className="rounded-full border-2 border-white shadow-lg hover:scale-110 transition-transform duration-300"
